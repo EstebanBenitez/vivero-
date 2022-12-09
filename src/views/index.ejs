@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <%- include('./partials/head'); %>
+    </head>
+<body>
+    <%- include('./partials/header'); %>
+    <div class="baner">
+        <div class="capa"></div>
+        <div class="info ">
+        <h1>Bienvenidos a la primicia</h1> 
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ullam minima dolores voluptatibus incidunt accusamus repudiandae ea, at aliquid modi earum suscipit, necessitatibus quibusdam. Optio libero officia exercitationem mollitia commodi.</p>
+        <a href="#">leer mas</a>
+        </div>
+    
+    </div>
+      <section class="productos">
+        <h1> Nuestros  Productos</h1>
+      </section>
+ 
+    <div class="container">
+        <% for(var i=0; i<productos.length; i++) {%>
+        <div class="card">
+          <figure>
+            <img
+            class="card-img"
+            src="/images/<%=productos[i].imagen %>"
+            alt="..."/>
+          </figure>
+             <div class="contenido">
+             <h3 class="card-nombre"><%= productos[i].nombre%></h3>
+             <p class="card-precio"> <%= productos[i].precio%></p>
+             <p class="card-descripcion"><%= productos[i].descripcion%></p>
+
+             <a href="#" >COMPRAR</a>
+             </div>
+        </div>
+        <% } %>
+      </div>
+
+        <%- include('./partials/footer'); %>
+
+</body>
+</html>

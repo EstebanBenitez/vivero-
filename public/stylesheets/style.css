@@ -1,0 +1,316 @@
+
+body {
+
+font-family:sans-serif;
+margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+header{
+    display: flex;
+    height: 70px;
+    background-attachment:#1b9936;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px ;
+}
+ .logo{
+    display: flex;
+    align-items: center;
+
+ }
+
+ .logo img {
+    height: 50px ;
+ }
+
+ nav a{
+    font-weight: 600;
+    padding-right: 10px;
+
+ }
+
+ nav a:hover{
+    color: #0889fa;
+ }
+
+
+ *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+}
+
+ .baner{
+    width: 100%;
+    height: 480px;
+    animation:baner 10s infinite linear alternate;
+    background-size: 100% 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+
+@keyframes baner {
+    0%, 20%{
+        background-image: url(../images/baner1.jpg);
+    }
+    25%, 45%{
+        background-image: url(../images/baner2.jpg);
+    } 
+    50%, 75%{
+        background-image: url(../images/baner3.jpg);
+    } 
+    75% , 100%{
+        background-image: url(../images/baner4.jpg);
+    }
+}
+
+.container{
+    padding: 35px;
+    justify-content: center;
+    display: flex;
+    font-size:20px;
+    
+}
+
+.capa{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top: 0;
+    left: 0;
+    background: rgb(0,0,0,0,6)
+}
+
+.info{
+    z-index:1;
+    width: 100%;
+    max-width: 550 px;
+    text-align: center;
+    }
+
+.info h1{
+    color: #fff;
+    font-size: 45 px;
+    letter-spacing: 1px;
+}
+
+.info p {
+    color: aliceblue;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    }
+.info a {
+    color: #fff;
+    text-decoration:none;
+    background: hwb(209 45% 3%);
+    padding: 16px 37px;
+    display: inline-block;
+    border-radius: 50px ;
+
+}
+
+/* secion del los productos */
+
+.productos{
+    padding: 35px;
+    justify-content: center;
+    display: flex;
+    font-size:20px;
+    color: #1b9936;
+} 
+
+
+/* mis productos */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    display: grid; 
+    grid-template-columns: repeat(3,1fr);
+    max-width: 1100px;
+    gap: 25px ;
+    margin: auto;
+}
+
+.card{
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: hsl(0, 2%, 91%);
+    box-shadow: 0px 1px 10px rgb(0,0,0,0.2);
+    cursor: default;
+    transition: all 450ms ease;
+    
+}
+
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+
+}
+
+.card img{
+    width: 100%;
+    height:210px;
+}
+
+.card .contenido{
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    min-height: 200px;
+
+}
+.card .contenido p{
+    line-height: 1.5;
+    color:black;
+}
+
+.card .contenido h3{
+    font-weight:400;
+    margin-bottom: 15px;
+
+}
+
+.card .contenido a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color:hwb(180 6% 93%);
+    border-radius: 4px;
+    transition: all 450ms ease;
+    position: absolute;
+    bottom: 0;
+    left: 100px
+
+}
+
+.card .contenido a:hover{
+    background: #ece9fab0;
+    color: #370bf80f;
+}
+
+
+/* footer secion */
+.pie{
+    background: hsla(133, 97%, 42%, 0.747);
+}
+
+img{
+    width: 60px;
+}
+.logo {
+    display:flex;
+    align-items: center;
+    gap: 10px;
+
+}
+span{
+    font-size: 25px;
+}
+
+.fb{
+    background: blue;
+    padding: 8px;
+    border-radius: 50px;
+    color:white
+}
+
+.wht{
+    background: green;
+    padding: 8px;
+    border-radius: 50px;
+    color: white;
+}
+
+.ins{
+    background: hsl(340, 91%, 64%);
+    padding: 8px;
+    border-radius: 50px;
+    color: white;
+}
+
+.twiter{
+    background: hwb(208 29% 3%);
+    padding: 8px;
+    border-radius: 50px;
+    color: white;
+}
+
+
+.padre{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+.logotipo{
+    font-size: 20px;
+    color: #0c0c0c;
+}
+
+.secion{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+}
+.secion div{
+    display: flex;
+    flex-direction: column;
+
+}
+
+div h2{
+    color: white;
+    padding: 10px 0;
+}
+
+a{
+    color: rgb(20, 19, 19);
+    text-decoration: none;
+    padding: 4px;
+    
+}
+
+form{
+    display: flex ;
+    flex-direction: column;
+    gap: 12px;
+}
+
+input{
+    background: none;
+    border: solid 2px white;
+    padding: 10px 20px;
+
+}
+button{
+    padding: 10px 20px;
+    background: white;
+    color: #0c0c0c;
+    font-size: 18px;
+}
+
+
+.derechos{
+    display:flex;
+    justify-content: 20px;
+    padding: 20px;
+    background: #1b9936;
+
+}
